@@ -40,6 +40,8 @@ final class CategoryAdmin extends AbstractAdmin
         $form
             #->add('id')
             ->add('name')
+            ->add('parent')
+            ->add('active')
             ;
     }
 
@@ -48,6 +50,7 @@ final class CategoryAdmin extends AbstractAdmin
         $show
             ->add('id')
             ->add('name')
+            ->add('active')
             ;
     }
 }

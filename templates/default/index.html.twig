@@ -1,8 +1,11 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Hello{{number}}world{% endblock %}
+{% block title %}Hello{% endblock %}
 
 {% block body %}
-    Hello world {{number}}
-    my name is {{name}}
+    <ul>
+    {% for category in categories %}
+        <li><a href="{{category.id}}">{{category.name}}</a></li>
+    {% endfor %}
+    </ul>
 {% endblock %}
